@@ -40,7 +40,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4lH-Yv-xe9" secondAttribute="bottom" id="v8x-sh-2kq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="R2Q-Rq-aWj"/>
+                    <navigationItem key="navigationItem" id="R2Q-Rq-aWj">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="ih2-Du-EhE">
+                            <connections>
+                                <action selector="didTapAdd" destination="BYZ-38-t0r" id="5JC-fM-On9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="4lH-Yv-xe9" id="PTc-iC-Ot1"/>
                     </connections>
@@ -49,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="692.75362318840587" y="72.554347826086968"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
         <scene sceneID="DwP-lG-56p">
             <objects>
-                <viewController id="TWt-ps-HYO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Task" id="TWt-ps-HYO" customClass="TaskViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dG2-Sj-63o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,6 +69,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EoD-ng-vuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1347.8260869565217" y="73.369565217391312"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="WnJ-tD-BhZ">
+            <objects>
+                <viewController storyboardIdentifier="Entry" id="EGC-p6-uia" customClass="EntryViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQ4-mO-D9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wiC-1M-aYv">
+                                <rect key="frame" x="20" y="20" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="aqI-6w-wnm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xCa-Xc-RC1"/>
+                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="xCa-Xc-RC1" firstAttribute="trailing" secondItem="wiC-1M-aYv" secondAttribute="trailing" constant="20" id="UR1-0C-7lp"/>
+                            <constraint firstItem="wiC-1M-aYv" firstAttribute="top" secondItem="xCa-Xc-RC1" secondAttribute="top" constant="20" id="dUX-MA-wsy"/>
+                            <constraint firstItem="wiC-1M-aYv" firstAttribute="leading" secondItem="xCa-Xc-RC1" secondAttribute="leading" constant="20" id="iKU-tW-dbE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="field" destination="wiC-1M-aYv" id="B3g-pq-RaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mji-3a-Vd4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="732"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="c2P-yx-SYe">
@@ -86,6 +125,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

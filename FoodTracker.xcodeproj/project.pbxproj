@@ -15,6 +15,8 @@
 		D92B64232617FCC4005BC049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92B64212617FCC4005BC049 /* LaunchScreen.storyboard */; };
 		D92B642E2617FCC4005BC049 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B642D2617FCC4005BC049 /* FoodTrackerTests.swift */; };
 		D92B64392617FCC4005BC049 /* FoodTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B64382617FCC4005BC049 /* FoodTrackerUITests.swift */; };
+		D95B4643261A8F8800282A62 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B4642261A8F8800282A62 /* EntryViewController.swift */; };
+		D95B4648261A8FBC00282A62 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95B4647261A8FBC00282A62 /* TaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D92B64342617FCC4005BC049 /* FoodTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92B64382617FCC4005BC049 /* FoodTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerUITests.swift; sourceTree = "<group>"; };
 		D92B643A2617FCC4005BC049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95B4642261A8F8800282A62 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		D95B4647261A8FBC00282A62 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				D92B641F2617FCC4005BC049 /* Assets.xcassets */,
 				D92B64212617FCC4005BC049 /* LaunchScreen.storyboard */,
 				D92B64242617FCC4005BC049 /* Info.plist */,
+				D95B4642261A8F8800282A62 /* EntryViewController.swift */,
+				D95B4647261A8FBC00282A62 /* TaskViewController.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92B641B2617FCC4005BC049 /* ViewController.swift in Sources */,
+				D95B4643261A8F8800282A62 /* EntryViewController.swift in Sources */,
+				D95B4648261A8FBC00282A62 /* TaskViewController.swift in Sources */,
 				D92B64172617FCC4005BC049 /* AppDelegate.swift in Sources */,
 				D92B64192617FCC4005BC049 /* SceneDelegate.swift in Sources */,
 			);
