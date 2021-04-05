@@ -62,9 +62,26 @@
                     <view key="view" contentMode="scaleToFill" id="dG2-Sj-63o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wjg-SQ-q78">
+                                <rect key="frame" x="12" y="12" width="390" height="712"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YvZ-LK-F4B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wjg-SQ-q78" firstAttribute="leading" secondItem="YvZ-LK-F4B" secondAttribute="leading" constant="12" id="Lay-mc-K7C"/>
+                            <constraint firstItem="Wjg-SQ-q78" firstAttribute="top" secondItem="YvZ-LK-F4B" secondAttribute="top" constant="12" id="fRm-KJ-67b"/>
+                            <constraint firstItem="YvZ-LK-F4B" firstAttribute="trailing" secondItem="Wjg-SQ-q78" secondAttribute="trailing" constant="12" id="fkD-Tw-9XP"/>
+                            <constraint firstItem="YvZ-LK-F4B" firstAttribute="bottom" secondItem="Wjg-SQ-q78" secondAttribute="bottom" constant="12" id="wci-EN-Wwz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="Wjg-SQ-q78" id="oPo-BX-KRX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EoD-ng-vuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
